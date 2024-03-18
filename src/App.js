@@ -162,7 +162,7 @@ function HandleChange(e){
 async function LoadData(lon, lat, loadText, e) {
   let forecast7days = [];
 
-  let URL = `http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`;
+  let URL = `https://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`;
   console.log(`longitude:${lon} latitude:${lat}`)
   console.log(URL);
   
