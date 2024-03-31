@@ -33,7 +33,7 @@ main{
   max-width: 230px;
   background-color: #65616152;
   min-height: 350px;
-  filter: drop-shadow(0px 2px 2px black);
+  box-shadow: 0px 0px 5px;
   height: 100px;
   border-radius: 20px;
   display: flex;
@@ -53,7 +53,7 @@ main{
   text-align: center;
 }
 .weather-icon{
-  width: 200px;
+  width: 100px;
   height: 100px;
 
 }

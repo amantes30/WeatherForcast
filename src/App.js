@@ -58,8 +58,9 @@ function App() {
         </ul>
       </main>
       <footer>
+      <a target="_blank" href="https://icons8.com/icon/W8fUZZSmXssu/clouds">Clouds</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         <p className="copyright-text">
-          © Copyright 2023 <a href="https://omstudio.me/">amantes30</a>
+          © Copyright 2023 <a href="https://amantes30.com/">amantes30</a>
           <span style={{ display: "block", textAlign: "center" }}>
             Powered by{" "}
             <a href="https://www.7timer.info/doc.php?lang=en#civillight">
