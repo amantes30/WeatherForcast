@@ -18,11 +18,9 @@ code {
   overflow-y: auto;
   justify-content: space-between;
   overflow: auto;
+  color: white;
 }
-h1, h3{
-  padding: 0;
-  margin: 0;
-}
+
 footer{
   font-size: 0.8em;
   font-style: italic;

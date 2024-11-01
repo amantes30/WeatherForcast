@@ -39,9 +39,7 @@ function App() {
   }, []);
   return (
     <>
-    <div className="bkground">
-      <img src="/images/background.jpg" alt="background"></img>
-    </div>
+    <div className="bkground"></div>
       <header>
         <h1>7Timer API project</h1>
       </header>
