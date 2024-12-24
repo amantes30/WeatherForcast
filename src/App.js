@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { v4 as uuid } from "uuid";
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -18,9 +16,9 @@ function App() {
           latling: `${e.split(",")[0]}, ${e.split(",")[1]}`,
         }));
         const newList = countryList.filter(
-          (e) => e.latling != "latitude, longitude"
+          (e) => e.latling !== "latitude, longitude"
         );
-        newList.map((e) => {
+        newList.forEach((e) => {
           list.push(
             <option key={uuid()} value={e.latling}>
               {e.name}
@@ -56,7 +54,7 @@ function App() {
         </ul>
       </main>
       <footer>
-      <a target="_blank" href="https://icons8.com/icon/W8fUZZSmXssu/clouds">Clouds</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/W8fUZZSmXssu/clouds">Clouds</a> icon by <a href="https://icons8.com">Icons8</a>
         <p className="copyright-text">
           © Copyright 2023 <a href="https://amantes30.com/">amantes30</a>
           <span style={{ display: "block", textAlign: "center" }}>
@@ -79,7 +77,7 @@ function HandleChange(e){
     const latitude = e.target.value.split(",")[0];
     const longitude = e.target.value.split(",")[1];
 
-    const selectedValue = e.target.ariaValueMax;
+    // const selectedValue = e.target.ariaValueMax;
     loadText.textContent = "Loading..."
     loadText.style.display = "block"
     e.target.disabled = true;
@@ -165,8 +163,6 @@ function stringToDate(dateString) {
   var day = parseInt(String(dateString).substring(6, 8), 10);
 
   var myDate = new Date(year, month, day);
-  var dayOfWeek = myDate.getDay();
-  //console.log(getMonthName(myDate.getMonth()))
 
   return `${getDayName(myDate.getDay())}, ${getMonthName(
     myDate.getMonth()
