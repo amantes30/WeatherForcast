@@ -12,3 +12,6 @@ Start server
 ```
 npm start
 ```
+
+## Screenshot
+<img src="https://amantes30.com/image/weathersite.png"/>
